@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV Wilhelm Berggren</title>
+        <style>
+            body { 
+                background: whitesmoke;
+            }
+
+            .wrapper {
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+            }
+
+            section {
+                padding: 0.5em;
+            }
+
+            .resume {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                    "name name name"
+                    "about about photo"
+                    "about about contact"
+                    "work work work"
+                    "work work work";
+                grid-gap: 1em;
+            }
+
+            .name { 
+                grid-area: name; 
+                text-align: center;
+            }
+            .photo { grid-area: photo; }
+            .about { grid-area: about; }
+            .contact { grid-area: contact; }
+            .work { grid-area: work; }
+
+            #pic { 
+                max-width: 100%; 
+                box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+
+            }
+
+            header {
+                place-self: center;
+            }
+
+            /*@media all and (min-width: 600px) { }
+
+            @media all and (min-width: 800px) { }*/
+        </style>
+    </head>
+    <body>
+        <main class="wrapper">
+            <article class="resume">
+                <section class="photo">
+                    <img id="pic" src="cv.jpg" alt="Image of Wilhelm Berggren"/>
+                </section>
+
+                <section class="name">
+                    <h2>Wilhelm Berggren</h2>
+                    <h3>Software developer</h3>
+                </section>
+
+                <section class="contact">
+                    <p>
+                        Email: <a href="mailto:wilhelmberggren@hotmail.com"> wilhelmberggren@hotmail.com </a>
+                    </p>
+                    <p>
+                        Phone: <a href="tel:+46760060700">0760060700</a>
+                    </p>
+                    <p>
+                        <a href="https://www.github.com/wilhlemberggren">Github</a>
+                    </p>
+                </section>
+                
+                <section class="about">
+                    <h1>About me</h1>
+                    <p>I love solving problems and helping other people. I learn quickly and am happy to apply new skills to projects. I can work both alone and as a part of a team</p>
+                </section>
+
+                <section class="work">
+                    <h1>Experience</h1>
+                    <section>
+                        <h3>October 2017 - June 2018</h3>
+                        <h2>Developer, Ericsson, department 4G Robustness</h2>
+                        <p>Wrote tools to connect existing services and features for internal use. Lots of Python, Linux/Unix, automating diagnostic information gathering through REST, SSH and more.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>June 2017 - August 2017</h3>
+                        <h2>Ericsson, department 4G Robustness, Kista - Summer Worker</h2>
+                        <p>
+                            Co-wrote Java tools to make logging and testing easier, as well as a troubleshooting tool written in Python for finding similar issues through an existing error reporting REST api.
+                            Learned to work better in a team environment and how to structure non-trivial codebases. Lots of pair programming and collaboration with fellow summer workers, as well as guidance from the senior employees.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>
+                            June 2016 - August 2016
+                        </h3>
+                        <h2>
+                            Ericsson Research, department SMN, Kista - Summer Worker Media Content Analytics Software Platform
+                        </h2>
+                        <p>
+                            Was part of a project team using Python, Tornado Web, Docker, Vagrant, GStreamer and Kaldi in a Linux environment for data center deployment, as well as building a web interface using HTML5, CSS and JS.
+                        </p>
+                    </section>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
