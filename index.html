@@ -22,38 +22,48 @@
             .resume {
                 width: 100%;
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-areas: 
-                    "name name name"
-                    "about about photo"
-                    "about about contact"
-                    "work work work"
-                    "work work work";
+                grid-template-columns: 1fr 1fr 300px;
                 grid-gap: 1em;
+                grid-template-areas: 
+                        "photo photo photo"
+                        "name name name"
+                        "about about about"
+                        "contact contact contact"
+                        "work work work";
             }
 
             .name { 
                 grid-area: name; 
                 text-align: center;
             }
-            .photo { grid-area: photo; }
+            .photo { 
+                grid-area: photo; 
+                text-align: center;
+            }
+
             .about { grid-area: about; }
             .contact { grid-area: contact; }
             .work { grid-area: work; }
 
             #pic { 
-                max-width: 100%; 
+                max-width: 300px; 
                 box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
-
             }
 
             header {
                 place-self: center;
             }
 
-            /*@media all and (min-width: 600px) { }
-
-            @media all and (min-width: 800px) { }*/
+            @media (min-aspect-ratio: 1/1) { 
+                .resume {
+                    grid-template-areas: 
+                        "name name name"
+                        "about about photo"
+                        "work work contact"
+                        "work work contact"
+                        "work work contact";
+                }
+            }
         </style>
     </head>
     <body>
@@ -70,13 +80,10 @@
 
                 <section class="contact">
                     <p>
-                        Email: <a href="mailto:wilhelmberggren@hotmail.com"> wilhelmberggren@hotmail.com </a>
+                        <a href="mailto:wilhelmberggren@hotmail.com"> wilhelmberggren@hotmail.com </a>
                     </p>
                     <p>
-                        Phone: <a href="tel:+46760060700">0760060700</a>
-                    </p>
-                    <p>
-                        <a href="https://www.github.com/wilhlemberggren">Github</a>
+                        <a href="https://www.github.com/wilhelmberggren">Github</a>
                     </p>
                 </section>
                 
