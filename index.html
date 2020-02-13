@@ -2,70 +2,8 @@
 <html lang="en">
     <head>
         <title>CV Wilhelm Berggren</title>
-        <style>
-            body { 
-                background: whitesmoke;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            .wrapper {
-                align-items: center;
-                padding: 0;
-                margin: 0;
-                width: 100%;
-                box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
-            }
-
-            section {
-                padding: 0.5em;
-            }
-
-            .resume {
-                width: 100%;
-                display: grid;
-                grid-template-columns: 1fr 1fr 300px;
-                grid-gap: 1em;
-                grid-template-areas: 
-                        "photo photo photo"
-                        "name name name"
-                        "about about about"
-                        "contact contact contact"
-                        "work work work";
-            }
-
-            .name { 
-                grid-area: name; 
-                text-align: center;
-            }
-            .photo { 
-                grid-area: photo; 
-                text-align: center;
-            }
-
-            .about { grid-area: about; }
-            .contact { grid-area: contact; }
-            .work { grid-area: work; }
-
-            #pic { 
-                max-width: 300px; 
-                box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
-            }
-
-            header {
-                place-self: center;
-            }
-
-            @media (min-aspect-ratio: 1/1) { 
-                .resume {
-                    grid-template-areas: 
-                        "name name name"
-                        "about about photo"
-                        "work work contact"
-                        "work work contact"
-                        "work work contact";
-                }
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
     </head>
     <body>
         <main class="wrapper">
@@ -86,6 +24,9 @@
                     <p>
                         <a href="https://www.github.com/wilhelmberggren">Github</a>
                     </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/wilhelm-berggren-4b034496/">LinkedIn</a>
+                    </p>
                 </section>
                 
                 <section class="about">
@@ -93,8 +34,26 @@
                     <p>I love solving problems and helping other people. I learn quickly and am happy to apply new skills to projects. I can work both alone and as a part of a team</p>
                 </section>
 
+                <section class="projects">
+                    <h1>Project highlights</h1>
+                    <div id="highlights-wrapper">
+                        <div class="highlights" id="GuildWarsBuildSaver">
+                            <a href="https://github.com/WilhelmBerggren/GuildWarsBuildSaver">GuildWarsBuildSaver</a>
+                            <p>A REST API built with ASP.Net</p>
+                        </div>
+                        <div class="highlights" id="GGJ2020">
+                            <a href="https://github.com/Solum96/GGJ2020">GGJ2020</a>
+                            <p>A simple Unity game built for Global Game Jam 2020</p>
+                        </div>
+                        <div class="highlights" id="Battlesnake">
+                            <a href="https://github.com/WilhelmBerggren/battlesnake-io-python">Battlesnake.io</a>
+                            <p>Winning hackathon submission using Python, Flask and Heroku</p>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="work">
-                    <h2>Experience</h2>
+                    <h1>Experience</h1>
                     <section>
                         <h4>October 2017 - June 2018</h4>
                         <h3>Developer, Ericsson, department 4G Robustness</h3>
@@ -125,10 +84,33 @@
                     <h2>Education</h2>
                     <section>
                         <h4>
+                            2019-2021
+                        </h4>
+                        <h3>
+                            IT-Högskolan, .NET-developer
+                        </h3>
+                        <p>
+                            Currently enrolled in a 2 year program learning full stack development on the .NET platform.
+                            Key skills learned so far: 
+                        </p>
+                        <ul>
+                            <li>
+                                C#, mainly on .Net Core 3.0 <br>
+                            </li>
+                            <li>
+                                SQL/NoSQL databases such as MS SQL Server and MongoDB, Entity Framework<br>
+                            </li>
+                            <li>
+                                ASP.Net
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h4>
                             2015 - 2018
                         </h4>
                         <h3>
-                            Kungliga Tekniska Högskolan, Kista - Degree Programme in Information and Communication Technology
+                            Kungliga Tekniska Högskolan - Degree Programme in Information and Communication Technology
                         </h3>
                         <p>
                             Spent 2 ½  years at university furthering my understanding of maths, computer science, networks and associated topics. 
@@ -139,7 +121,7 @@
                             2012 - 2015
                         </h4>
                         <h3>
-                            Åva Gymnasium, Täby - Informations- & medieteknik, Teknikprogrammet
+                            Åva Gymnasium - Informations- & medieteknik, Teknikprogrammet
                         </h3>
                         <p>
                             Earned a solid foundation in web development and programming, as well as mathematics and physics, which gave me a head start in my studies at KTH as well as job opportunities.
