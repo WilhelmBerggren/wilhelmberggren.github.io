@@ -31,6 +31,7 @@ section {
             "photo photo photo"
             "name name name"
             "about about about"
+            "skills skills skills"
             "projects projects projects"
             "contact contact contact"
             "work work work"
@@ -44,6 +45,10 @@ section {
 .photo { 
     grid-area: photo; 
     text-align: center;
+}
+
+.skills {
+    grid-area: skills;
 }
 
 .work { grid-area: work; }
@@ -62,8 +67,7 @@ header {
 }
 
 #highlights-wrapper {
-    display: grid;
-    grid-template-rows: repeat(20px, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
     grid-gap: .5em;
 }
 
@@ -80,14 +84,13 @@ header {
             "name name name"
             "about about photo"
             "contact contact photo"
-            "projects projects projects"
+            "skills skills projects"
             "work work work"
             "education education education";
     }
 }
 
 #chat {
-    display: none;
     background: whitesmoke;
     position: fixed;
     right: 5px;
