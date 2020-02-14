@@ -86,9 +86,31 @@ header {
     }
 }
 
+#chat {
+    display: none;
+    background: whitesmoke;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 5%;
+}
+
+#chat-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+
+}
+
 @media only screen and (min-width: 1000px) {
     .wrapper {
         min-width: 800px;
         max-width: 70%;
+    }
+
+    #chat {
+        display: inherit;
     }
 }
